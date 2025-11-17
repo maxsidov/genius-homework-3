@@ -58,6 +58,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
+  margin: 0;
 }
 
 h1,
@@ -84,6 +85,7 @@ ul {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 /* Heder conteiner */
 
@@ -129,12 +131,16 @@ ul {
 
 /*  Заголовок */
 .hero-section {
-  padding: 17px;
+  padding: 123px 0;
   padding-left: 106px;
   background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+}
+
+.hero-conteiner {
+  padding-left: 106px;
 }
 
 .container {
@@ -207,6 +213,7 @@ ul {
 
 .conteiner-beauty-zone {
   display: flex;
+  justify-content: space-between;
 }
 .conteiner-description-beauty-zone {
   width: 100%;
@@ -234,6 +241,7 @@ ul {
   width: 100%;
   max-width: 327px;
   max-height: 327px;
+  margin-left: 172px;
   filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
 }
 
@@ -243,7 +251,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  line-height: 1.7;
+  line-height: 0.86;
 }
 .titel-beauty-zone {
   margin-bottom: 40px;
@@ -261,6 +269,7 @@ ul {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.6;
+  font-family: "Roboto";
 }
 
 /* main-h2-Why-us другий заголовок Чому обирають нас */
@@ -279,11 +288,8 @@ ul {
 
 .titel-Why-us {
   margin-bottom: 48px;
-  width: 100%;
   max-width: 432px;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+  text-align: center;
 }
 
 /* conteiner */
@@ -299,6 +305,17 @@ ul {
   border-radius: 16px;
   width: 100%;
   max-width: 316px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo-why-us {
+  display: block;
+  margin: 0 auto;
+  fill: var(--color-black);
 }
 
 .Section {
@@ -619,10 +636,13 @@ ul {
 .address-container {
   flex-grow: 1;
   gap: 16px;
- }
+}
 
 .address-confidentiality {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  gap: 16px;
 }
 
 .social-networks {
