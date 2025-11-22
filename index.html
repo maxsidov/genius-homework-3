@@ -7,7 +7,7 @@
     <!-- fonts -->
 
     <!-- styles -->
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header>
@@ -79,7 +79,7 @@
             <p class="main-paragraf-title">Косметологічна клініка</p>
             <h1 class="main-Hero-title" lang="en"><span>Beauty</span> Zone</h1>
             <div class="conteiner-button">
-              <button type="button" class="titel-button button">
+              <button type="button" class="titel-button button modal-btn-open">
                 Замовити дзвінок
               </button>
               <p class="main-paragraf-button">
@@ -118,6 +118,15 @@
                 src="./images/Woman-with-skin-problem.jpg"
                 alt=":жінка після процедур"
               />
+              <svg width="32" height="32" class="Star Stas-animation">
+                <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+              </svg>
+              <svg width="32" height="32" class="Star2 Stas-animation">
+                <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+              </svg>
+              <svg width="32" height="32" class="Star3 Stas-animation">
+                <use href="./images/symbol-defs.svg#icon-Star-1"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -185,38 +194,38 @@
             </div>
             <ul class="conteiter-procedures-img">
               <li>
-                <article class="procedures--info">
-                  <!-- <img
-                  class="img-procedures1"
-                  src="./images/Woman-with-cream-on-her-face-undergoing-procedures.jpg"
-                  alt="Жінка з маскою на обличі"
-                /> -->
+                <article class="procedures-info">
+                  <img
+                    class="img-procedures1"
+                    src="./images/Woman-with-cream-on-her-face-undergoing-procedures.jpg"
+                    alt="Жінка з маскою на обличі"
+                  />
                   <h3 class="main-h3-procedures">Маски для обличчя</h3>
                 </article>
               </li>
               <li>
-                <article class="procedures--info">
-                  <!-- <img
-                  class="img-procedures1"
-                  src="./images/Woman-getting-an-injection-in-her- face.jpg"
-                  alt="Жінка якій роблять інєкцію в обличчя"
-                /> -->
+                <article class="procedures-info">
+                  <img
+                    class="img-procedures1"
+                    src="./images/Woman-getting-an-injection-in-her- face.jpg"
+                    alt="Жінка якій роблять інєкцію в обличчя"
+                  />
                   <h3 class="main-h3-procedures">Ін'єкції для обличчя</h3>
                 </article>
               </li>
               <li>
-                <article class="procedures--info">
-                  <!-- <img
-                  class="img-procedures1"
-                  src="./images/Woman-cleaning-pores-on-face.jpg"
-                  alt="Жінка якій чисьтять обличчя"
-                /> -->
+                <article class="procedures-info">
+                  <img
+                    class="img-procedures1"
+                    src="./images/Woman-cleaning-pores-on-face.jpg"
+                    alt="Жінка якій чисьтять обличчя"
+                  />
                   <h3 class="main-h3-procedures">Очищення обличчя</h3>
                 </article>
               </li>
             </ul>
             <div class="carousel-conteiner">
-              <button class="carousel-button">
+              <button class="carousel-button next">
                 <svg class="carousel-arrow" width="16" height="16">
                   <use href="./images/symbol-defs.svg#icon-Arrow-1"></use>
                 </svg>
@@ -244,33 +253,53 @@
             ></iframe>
             <div class="record">
               <div class="conteiner-record">
-                <div class="conteiner-h3-Sign-up">
-                  <h3 class="titel-Sign-up h3-Sign-up">
-                    Запишіться <span class="accent">безкоштовно</span> та
-                    отримайте подарунок
-                  </h3>
-                </div>
-                <div class="conteiner-button-Sign">
-                  <p class="title-name border-name">Ваше ім'я та прізвищ</p>
-                  <p class="title-phone border-phone">Ваш номер телефону</p>
-                  <p class="phone-mail border-mail">Ваша електронна пошта</p>
-                  <div class="container-paragraf-Sign-up">
-                    <button
-                      type="button"
-                      class="title-button-Sign button-Sign-up"
-                    >
-                      Записатись безкоштовно
-                    </button>
-                    <div class="conteiner-paragrag-sign-up">
-                      <p class="paragraf-Sign-up">
-                        Натискаючи на кнопку я погоджуюсь
-                        <a href="" target="_blank"
-                          >з політикою конфіденційності</a
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <h3 class="titel-Sign-up h3-Sign-up">
+                  Запишіться <span class="accent">безкоштовно</span> та
+                  отримайте подарунок
+                </h3>
+
+                <form class="contact-form" autocomplete="off">
+                  <label class="contact-field">
+                    <input
+                      type="text"
+                      name="username"
+                      placeholder="Ваше імʼя та прізвище"
+                      required
+                      pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+\s+[A-Za-zА-Яа-яІіЇїЄєҐґ]+$"
+                      title="Введіть імʼя та прізвище через пробіл"
+                    />
+                  </label>
+
+                  <label class="contact-field">
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="Ваш номер телефону"
+                      required
+                      pattern="^\+380\d{9}$"
+                      title="Формат: +380XXXXXXXXX"
+                    />
+                  </label>
+
+                  <label class="contact-field">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Ваша електронна пошта"
+                      required
+                      title="Введіть коректний email"
+                    />
+                  </label>
+
+                  <button type="submit" class="contact-submit">
+                    Записатись безкоштовно
+                  </button>
+
+                  <p class="contact-policy">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a href="#">з політикою конфіденційності</a>
+                  </p>
+                </form>
               </div>
             </div>
           </div>
@@ -289,24 +318,28 @@
                 />
               </a>
             </div>
-            <ul class="main-container">
-              <li>
-                <a href="#Aboutu_s_section" class="main-footer-menu">Про нас</a>
-              </li>
-              <li>
-                <a href="#Whyus_section" class="main-footer-menu">Чому ми</a>
-              </li>
-              <li>
-                <a href="#Our_pr_ocedures_section" class="main-footer-menu"
-                  >Наші процедури</a
-                >
-              </li>
-              <li>
-                <a href="#Contacts_section" class="main-footer-menu"
-                  >Контакти</a
-                >
-              </li>
-            </ul>
+            <div class="main-container">
+              <ul>
+                <li>
+                  <a href="#Aboutu_s_section" class="main-footer-menu"
+                    >Про нас</a
+                  >
+                </li>
+                <li>
+                  <a href="#Whyus_section" class="main-footer-menu">Чому ми</a>
+                </li>
+                <li>
+                  <a href="#Our_pr_ocedures_section" class="main-footer-menu"
+                    >Наші процедури</a
+                  >
+                </li>
+                <li>
+                  <a href="#Contacts_section" class="main-footer-menu"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </div>
           </nav>
           <address class="footer-address">
             <div class="address-container">
@@ -376,5 +409,57 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">✖</button>
+
+        <h2 class="h2-modal">Замовити дзвінок</h2>
+        <p class="p-modal">Запишіться безкоштовно та отримайте подарунок</p>
+
+        <form class="modal-form" autocomplete="off">
+          <label class="modal-field">
+            <input
+              type="text"
+              name="username"
+              placeholder="Ваше імʼя та прізвище"
+              required
+              pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+\s+[A-Za-zА-Яа-яІіЇїЄєҐґ]+$"
+              title="Введіть імʼя та прізвище через пробіл"
+            />
+          </label>
+
+          <label class="modal-field">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Ваш номер телефону"
+              required
+              pattern="^\+380\d{9}$"
+              title="Формат: +380XXXXXXXXX"
+            />
+          </label>
+
+          <label class="modal-field">
+            <input
+              type="email"
+              name="email"
+              placeholder="Ваша електронна пошта"
+              required
+              title="Введіть коректний email"
+            />
+          </label>
+
+          <button type="submit" class="modal-submit">
+            Записатись безкоштовно
+          </button>
+          <p class="modal-policy">
+            Натискаючи на кнопку ви погоджуєтесь з
+            <a href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

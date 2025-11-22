@@ -1,0 +1,33 @@
+/* Bazza */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
