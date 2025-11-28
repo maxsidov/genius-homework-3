@@ -6,10 +6,6 @@
   background-position: center top;
   background-size: cover;
 
-  &__conteiner {
-    padding-left: 106px;
-  }
-
   /* Парграф  Косметологічна клініка*/
   &__paragraf {
     color: var(--color-dark);
@@ -21,7 +17,7 @@
   /* Beauty Zone  Назва сайту*/
   &__hero {
     color: var(--color-black);
-    font-family: "Play";
+    font-family: "Play, sans-seri";
     font-style: normal;
     font-weight: 700;
     font-size: 140px;

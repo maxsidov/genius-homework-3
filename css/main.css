@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto, sans-serif";
   color: var(--color-dark);
   font-weight: 400;
   font-size: 18px;
@@ -480,9 +480,6 @@ header {
   /* Beauty Zone  Назва сайту*/
   /* Опис для button */
 }
-.hero-section__conteiner {
-  padding-left: 106px;
-}
 .hero-section__paragraf {
   color: var(--color-dark);
   font-style: normal;
@@ -491,7 +488,7 @@ header {
 }
 .hero-section__hero {
   color: var(--color-black);
-  font-family: "Play";
+  font-family: "Play, sans-seri";
   font-style: normal;
   font-weight: 700;
   font-size: 140px;
@@ -517,7 +514,7 @@ header {
 }
 .procedures__main {
   color: var(--color-dark);
-  font-family: "Play";
+  font-family: "Play, sans-seri";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -583,7 +580,7 @@ header {
 }
 .search__find-us .main-search {
   color: var(--color-dark);
-  font-family: "Play";
+  font-family: "Play, sans-seri";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -675,7 +672,7 @@ header {
 
 /* h2 загловок Перевтілюйтесь в beauty zone! */
 .beauty-zone {
-  padding-bottom: 112px;
+  padding-bottom: 128px;
 }
 .beauty-zone__conteiner {
   display: flex;
@@ -691,7 +688,7 @@ header {
 }
 .beauty-zone__main-h2 {
   color: var(--color-dark);
-  font-family: "Play";
+  font-family: "Play, sans-seri";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -767,7 +764,7 @@ header {
 }
 .Why-us__main-h2 {
   color: var(--color-dark);
-  font-family: "Play";
+  font-family: "Play, sans-seri";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
