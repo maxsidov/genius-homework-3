@@ -1,34 +1,33 @@
 /* button кнопка набрати */
 .conteiner-button {
   width: 238px;
-}
 
-.button {
-  color: var(--color-light);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.2;
-  background-color: var(--color-black);
-  border: 2px solid var(--color-black);
-  border-radius: 32px;
-  width: 219px;
-  height: 53px;
-  left: 20px;
-  top: 20px;
-  transition: color 0.2s;
-}
+  &__button {
+    color: var(--color-light);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: var(--color-black);
+    border: 2px solid var(--color-black);
+    border-radius: 32px;
+    width: 219px;
+    height: 53px;
+    left: 20px;
+    top: 20px;
+    transition: color 0.2s;
+    &:hover {
+      color: var(--color-black);
+      background-color: transparent;
+      border: 2px solid var(--color-black);
+      border-radius: 32px;
+    }
+  }
 
-.button:hover {
-  color: var(--color-black);
-  background-color: transparent;
-  border: 2px solid var(--color-black);
-  border-radius: 32px;
-}
-
-.titel-button {
-  margin-bottom: 14px;
+  &__button {
+    margin-bottom: 14px;
+  }
 }
 
 .contact-submit {

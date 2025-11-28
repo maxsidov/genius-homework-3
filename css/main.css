@@ -39,13 +39,6 @@
   font-weight: 700;
   src: url("../fonts/roboto-v49-latin-700.woff2") format("woff2");
 }
-:root {
-  --color-dark: #011c44;
-  --color-black: #2b7fff;
-  --color-light: #ffffff;
-  --color-black-dark: #011f4a;
-}
-
 /* Bazza */
 *,
 ::after,
@@ -54,6 +47,7 @@
 }
 
 body {
+  font-family: "Roboto";
   color: var(--color-dark);
   font-weight: 400;
   font-size: 18px;
@@ -92,101 +86,22 @@ header {
           backdrop-filter: blur(10px);
 }
 
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* Heder conteiner */
-.header-conteiner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.heder-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-
-.conteiner-menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-/* Меню hedear Навігація по сайту */
-.menu-header {
-  color: var(--color-dark);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.menu-header:hover {
+.accent {
   color: var(--color-black);
-  font-style: normal;
-  font-size: 18px;
 }
 
-/* HEADER соціальна сеть */
-.conteiner-contact {
-  display: flex;
-  gap: 32px;
-}
-
-/*  Заголовок */
-.hero-section {
-  padding: 123px 0;
-  padding-left: 106px;
-  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-
-.hero-conteiner {
-  padding-left: 106px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Парграф  Косметологічна клініка*/
-.main-paragraf-title {
-  color: var(--color-dark);
-  font-style: normal;
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-
-/* Beauty Zone  Назва сайту*/
-.main-Hero-title {
-  color: var(--color-black);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 140px;
-  line-height: 0.8;
-  width: 529px;
-  margin-bottom: 40px;
+:root {
+  --color-dark: #011c44;
+  --color-black: #2b7fff;
+  --color-light: #ffffff;
+  --color-black-dark: #011f4a;
 }
 
 /* button кнопка набрати */
 .conteiner-button {
   width: 238px;
 }
-
-.button {
+.conteiner-button__button {
   color: var(--color-light);
   font-family: "Roboto";
   font-style: normal;
@@ -202,212 +117,32 @@ header {
   top: 20px;
   transition: color 0.2s;
 }
-
-.button:hover {
+.conteiner-button__button:hover {
   color: var(--color-black);
   background-color: transparent;
   border: 2px solid var(--color-black);
   border-radius: 32px;
 }
-
-.titel-button {
+.conteiner-button__button {
   margin-bottom: 14px;
 }
 
-/* Опис для button */
-.main-paragraf-button {
-  color: #4a4a4a;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
+.contact-submit {
+  padding: 14px 30px;
+  border-radius: 32px;
+  border: none;
+  background: var(--color-black);
+  color: var(--color-light);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-/* h2 загловок Перевтілюйтесь в beauty zone! */
-.Section-beauty-zone {
-  padding-bottom: 112px;
-}
-
-.conteiner-beauty-zone {
-  display: flex;
-  justify-content: space-between;
-}
-
-.conteiner-description-beauty-zone {
-  width: 100%;
-  max-width: 709px;
-  gap: 32px;
-}
-
-.img-beauty-zone {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: 499px;
-  max-height: 665px;
-  gap: 40px;
-}
-
-.Star {
-  fill: #011f4a;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  right: 295px;
-  top: 336px;
-}
-
-.Star2 {
-  fill: #747272;
-  width: 16px;
-  height: 16px;
-  right: 6px;
-  top: 270px;
-  position: absolute;
-}
-
-.Star3 {
-  fill: #2b7fff;
-  width: 40px;
-  height: 40px;
-  right: -26px;
-  top: 32px;
-  position: absolute;
-  transform: rotate(0.5t);
-}
-
-.Stas-animation {
-  animation: spinScale 3s ease-in-out 1;
-}
-
-@keyframes spinScale {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.4);
-  }
-  100% {
-    transform: rotate(360deg) scale(1);
-  }
-}
-.img-beauty-zone1 {
-  border-radius: 50%;
-  width: 100%;
-  max-width: 327px;
-  max-height: 327px;
-  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
-}
-
-.img-beauty-zone2 {
-  border-radius: 50%;
-  width: 100%;
-  max-width: 327px;
-  max-height: 327px;
-  margin-left: 172px;
-  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
-}
-
-.main-h2-beauty-zone {
-  color: var(--color-dark);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 0.86;
-}
-
-.titel-beauty-zone {
-  margin-bottom: 40px;
-}
-
-.titel-description {
-  margin-bottom: 40px;
-}
-
-/* span зміна Деяких елементів коляру */
-.accent {
+.contact-submit:hover {
   color: var(--color-black);
-}
-
-/* Параграф опис Перевтілюйтесь в beauty zone */
-.paragraf-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.6;
-  font-family: "Roboto";
-}
-
-/* main-h2-Why-us другий заголовок Чому обирають нас */
-.main-h2-Why-us {
-  color: var(--color-dark);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-}
-
-.conteiner-Why-us {
-  display: flex;
-  justify-content: center;
-}
-
-.titel-Why-us {
-  margin-bottom: 48px;
-  max-width: 432px;
-  text-align: center;
-}
-
-/* conteiner */
-.container-Why-us-description {
-  display: flex;
-  gap: 56px;
-  justify-content: center;
-}
-
-.container-Why-us1 {
-  padding: 24px;
-  border: 1px solid var(--color-dark); /* удалити*/
-  border-radius: 16px;
-  width: 100%;
-  max-width: 316px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.logo-why-us {
-  display: block;
-  margin: 0 auto;
-  fill: var(--color-black);
-}
-
-.Section {
-  padding: 48px 0;
-}
-
-/* Опис Чому обирають нас */
-.paragraf-Why-us-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-/* наші процедури */
-.conteiner-procedures {
-  display: flex;
-  justify-content: center;
-}
-
-.list-conteiner-procederes {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  background-color: transparent;
+  border: 2px solid var(--color-black);
 }
 
 /* Кнопка для прогортування */
@@ -447,318 +182,48 @@ header {
   fill: var(--color-light);
 }
 
-/*  */
-.main-procedures {
-  color: var(--color-dark);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-}
-
-.titel-procedures {
-  margin-bottom: 48px;
-}
-
-/* Контейнер для розміщення фото */
-.conteiter-procedures-img {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-/* Опис Наші Процедури з фото */
-.procedures-info {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011c44 101.39%);
-  border-radius: 120px 4px;
-  height: 456px;
-  width: 344px;
-  transition: transform 0.2s;
-}
-
-.procedures-info:hover {
-  transform: scale(1.05);
-}
-
-/* IMG PROCEDURES */
-.img-procedures1 {
-  border-radius: 120px 4px;
-  position: absolute;
-  top: 0;
-  left: 0;
+.container {
   width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.main-h3-procedures {
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  flex-wrap: wrap;
-  align-items: center;
-  color: var(--color-light);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-}
-
-/* Як на знайти */
-.main-search {
-  color: var(--color-dark);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-}
-
-/* Як нас знайти */
-.contact-section {
-  padding-bottom: 94px;
-}
-
-.conteiner-search {
-  display: flex;
-  justify-content: center;
-}
-
-.titel-search {
-  margin-bottom: 48px;
-}
-
-/* Як нас знайти на блоки */
-/* ==== КОНТЕЙНЕР СЕКЦІЇ ==== */
-.main-record {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* ==== КАРТА ==== */
-.container-maps {
-  flex-shrink: 0;
-  border-radius: 32px;
-  overflow: hidden;
-}
-
-/* ==== ФОРМА (ПРАВА ЧАСТИНА) ==== */
-.record {
-  background-image: url(../images/background-singl-up.png);
-  background-color: var(--color-dark);
-  background-size: cover;
-  background-position: center;
-  border-radius: 32px;
-  width: 100%;
-  max-width: 423px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-/* Контейнер всередині форми */
-.conteiner-record {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/* === Заголовок === */
-.h3-Sign-up {
-  color: var(--color-light);
-  font-weight: 600;
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.h3-Sign-up .accent {
-  color: #4d9fff;
-}
-
-/* === ФОРМА === */
-.contact-form {
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  width: 100%;
-  max-width: 320px;
 }
 
-/* === Поля вводу === */
-.contact-field input {
-  width: 100%;
-  background: transparent;
-  border: 1px solid #345995;
-  border-radius: 32px;
-  padding: 14px 20px;
-  font-size: 14px;
-  color: var(--color-light);
-  outline: none;
-  transition: border-color 0.2s;
+.link {
+  color: var(--color-dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-bottom: 16px;
 }
-
-.contact-field input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.contact-field input::placeholder {
-  color: rgba(255, 255, 255, 0.55);
-}
-
-.contact-field input:focus {
-  border-color: #4d9fff;
-}
-
-/* === КНОПКА === */
-.contact-submit {
-  padding: 14px 30px;
-  border-radius: 32px;
-  border: none;
-  background: var(--color-black);
-  color: var(--color-light);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.2s;
-}
-
-.contact-submit:hover {
+.link:hover {
   color: var(--color-black);
-  background-color: transparent;
-  border: 2px solid var(--color-black);
+  font-style: normal;
 }
 
-/* === Текст політики === */
-.contact-policy {
-  color: #747272;
-  text-align: center;
-  font-size: 12px;
-  margin-top: 8px;
-  max-width: 240px;
+.Section {
+  padding: 48px 0;
 }
 
-.contact-policy a {
-  color: #4d9fff;
-  text-decoration: underline;
+.Stas-animation {
+  animation: spinScale 3s ease-in-out 1;
 }
 
-/* ==== АДАПТИВ ==== */
-@media (max-width: 768px) {
-  .record {
-    max-width: 100%;
+@keyframes spinScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }
-/* Футер */
-/* Зображення футер */
-.footer {
-  padding: 56px 0;
-  position: relative;
-  background-image: url(../images/background-footer.png);
-  background-color: var(--color-dark);
-  background-size: cover;
-  background-position: center;
-}
-
-.footer::after {
-  position: absolute;
-  width: 278px;
-  height: 152px;
-  background-size: 100%;
-  bottom: 0;
-  right: 0;
-  background-image: url("../images/PhotoRoom.png");
-  background-repeat: no-repeat;
-  content: "";
-}
-
-/* футер контейнер розміщення в ряд */
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-nav {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
-
-.logo-footer {
-  flex-grow: 1;
-}
-
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
-
-.address-container {
-  flex-grow: 1;
-  gap: 16px;
-}
-
-.address-confidentiality {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 16px;
-}
-
-.social-networks {
-  display: flex;
-  gap: 24px;
-}
-
-.info-address {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 16px;
-  padding-bottom: 16px;
-}
-
-.main-container {
-  flex-grow: 1;
-  gap: 16px;
-}
-
-/* footer menu */
-.main-footer-menu {
-  color: var(--color-light);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.address-icon {
-  fill: var(--color-light);
-}
-
-/* Політика конфіденційності*/
-.main-confidentiality {
-  color: var(--color-light);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/*  */
-.main-2022 {
-  color: #747272;
-  font-style: normal;
-  font-weight: 400;
-} 
-/* Затемнення фону */
 .backdrop {
   padding: 20px;
   position: fixed;
@@ -879,4 +344,459 @@ header {
 .modal-policy a {
   color: #5599ff;
   text-decoration: underline;
+}
+
+.footer {
+  padding: 56px 0;
+  position: relative;
+  background-image: url(../images/background-footer.png);
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::after {
+  position: absolute;
+  width: 278px;
+  height: 152px;
+  background-size: 100%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/PhotoRoom.png");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+/* футер контейнер розміщення в ряд */
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.logo-footer {
+  flex-grow: 1;
+}
+
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.address-container {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.address-confidentiality {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 24px;
+}
+
+.info-address {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.main-container {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+/* footer menu */
+.main-footer-menu {
+  color: var(--color-light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.address-icon {
+  fill: var(--color-light);
+}
+
+/* Політика конфіденційності*/
+.main-confidentiality {
+  color: var(--color-light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*  */
+.main-2022 {
+  color: #747272;
+  font-style: normal;
+  font-weight: 400;
+} 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header__menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+.header__contact {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-section {
+  padding: 123px 0;
+  padding-left: 106px;
+  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  /* Парграф  Косметологічна клініка*/
+  /* Beauty Zone  Назва сайту*/
+  /* Опис для button */
+}
+.hero-section__conteiner {
+  padding-left: 106px;
+}
+.hero-section__paragraf {
+  color: var(--color-dark);
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.hero-section__hero {
+  color: var(--color-black);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  width: 529px;
+  margin-bottom: 40px;
+}
+.hero-section__p-button {
+  color: #4a4a4a;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.procedures {
+  display: flex;
+  justify-content: center;
+  /* Контейнер для розміщення фото */
+  /* Опис Наші Процедури з фото */
+  /* IMG PROCEDURES */
+}
+.procedures__main {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+.procedures__titel {
+  margin-bottom: 48px;
+}
+.procedures__list-conteiner {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.procedures__conteiter-img {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.procedures__info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011c44 101.39%);
+  border-radius: 120px 4px;
+  height: 456px;
+  width: 344px;
+  transition: transform 0.2s;
+}
+.procedures__info:hover {
+  transform: scale(1.05);
+}
+.procedures__img-1 {
+  border-radius: 120px 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.procedures__main-h3 {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--color-light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.search {
+  padding-bottom: 94px;
+  /* Поля вводу */
+  /* === АДАПТИВ === */
+}
+.search__find-us {
+  display: flex;
+  justify-content: center;
+}
+.search__find-us .titel-search {
+  margin-bottom: 48px;
+}
+.search__find-us .main-search {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+.search__main-record {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.search__main-record .container-maps {
+  flex-shrink: 0;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.search__record {
+  background-image: url(../images/background-singl-up.png);
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 423px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+.search__conteiner-record {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.search__h3-Sign-up {
+  color: var(--color-light);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.search__contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 320px;
+}
+.search__contact-field input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #345995;
+  border-radius: 32px;
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--color-light);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search__contact-field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+.search__contact-field input::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+.search__contact-field input:focus {
+  border-color: #4d9fff;
+}
+.search__contact-policy {
+  color: #747272;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  max-width: 240px;
+  margin: 0 auto;
+}
+.search__contact-policy a {
+  color: #4d9fff;
+  text-decoration: underline;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .search .record {
+    max-width: 100%;
+  }
+}
+
+/* h2 загловок Перевтілюйтесь в beauty zone! */
+.beauty-zone {
+  padding-bottom: 112px;
+}
+.beauty-zone__conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+.beauty-zone__conteiner-description {
+  width: 100%;
+  max-width: 709px;
+  gap: 32px;
+}
+.beauty-zone__titel {
+  margin-bottom: 40px;
+}
+.beauty-zone__main-h2 {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 0.86;
+}
+.beauty-zone__titel-description {
+  margin-bottom: 40px;
+}
+.beauty-zone__p-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.6;
+  font-family: "Roboto";
+}
+.beauty-zone__img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 499px;
+  max-height: 665px;
+  gap: 40px;
+}
+.beauty-zone__img-1 {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 327px;
+  max-height: 327px;
+  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
+}
+.beauty-zone__img-2 {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 327px;
+  max-height: 327px;
+  margin-left: 172px;
+  filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
+}
+.beauty-zone__Star {
+  fill: #011f4a;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  right: 295px;
+  top: 336px;
+}
+.beauty-zone__Star2 {
+  fill: #747272;
+  width: 16px;
+  height: 16px;
+  right: 6px;
+  top: 270px;
+  position: absolute;
+}
+.beauty-zone__Star3 {
+  fill: #2b7fff;
+  width: 40px;
+  height: 40px;
+  right: -26px;
+  top: 32px;
+  position: absolute;
+  transform: rotate(0.5t);
+}
+
+.Why-us {
+  display: flex;
+  justify-content: center;
+}
+.Why-us__titel {
+  margin-bottom: 48px;
+  max-width: 432px;
+  text-align: center;
+}
+.Why-us__main-h2 {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+.Why-us__container-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.Why-us__container-description {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
+.Why-us__container-1 {
+  padding: 24px;
+  border: 1px solid var(--color-dark); /* удалити*/
+  border-radius: 16px;
+  width: 100%;
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.Why-us__logo {
+  display: block;
+  margin: 0 auto;
+  fill: var(--color-black);
 }/*# sourceMappingURL=main.css.map */

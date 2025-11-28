@@ -1,0 +1,13 @@
+.link {
+  color: var(--color-dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-bottom: 16px;
+  &:hover {
+    color: var(--color-black);
+    font-style: normal;
+  }
+}

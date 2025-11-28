@@ -1,0 +1,91 @@
+/* h2 загловок Перевтілюйтесь в beauty zone! */
+.beauty-zone {
+  padding-bottom: 112px;
+
+  &__conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__conteiner-description {
+    width: 100%;
+    max-width: 709px;
+    gap: 32px;
+  }
+  &__titel {
+    margin-bottom: 40px;
+  }
+  &__main-h2 {
+    color: var(--color-dark);
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 0.86;
+  }
+
+  &__titel-description {
+    margin-bottom: 40px;
+  }
+
+  &__p-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: "Roboto";
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 499px;
+    max-height: 665px;
+    gap: 40px;
+  }
+  &__img-1 {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 327px;
+    max-height: 327px;
+    filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
+  }
+
+  &__img-2 {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 327px;
+    max-height: 327px;
+    margin-left: 172px;
+    filter: drop-shadow(0px 4px 4px rgba(168, 198, 245, 0.2));
+  }
+
+  &__Star {
+    fill: #011f4a;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    right: 295px;
+    top: 336px;
+  }
+
+  &__Star2 {
+    fill: #747272;
+    width: 16px;
+    height: 16px;
+    right: 6px;
+    top: 270px;
+    position: absolute;
+  }
+
+  &__Star3 {
+    fill: #2b7fff;
+    width: 40px;
+    height: 40px;
+    right: -26px;
+    top: 32px;
+    position: absolute;
+    transform: rotate(0.5t);
+  }
+}

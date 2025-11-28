@@ -1,31 +1,20 @@
-@import "./utils/fonts";
-
+@import "./utils/fons";
+@import "./base";
+@import "./utils/mixin";
 @import "./utils/variables";
 
-@import "./base";
-
-@import "./components/container";
-
-@import "./layouts/header";
-
-@import "./layouts/hero-section";
-
-@import "./layouts/Section-beauty-zone";
-
 @import "./components/buttom";
-
+@import "./components/carousel-button";
+@import "./components/container";
+@import "./components/link";
+@import "./components/section";
 @import "./components/stas-animation";
 
-@import "./components/section";
-
-@import "./layouts/why-us";
-
-@import "./components/carousel-button";
-
-@import "./layouts/procedures";
-
-@import "./layouts/search";
-
-@import "./layouts/footer";
-
 @import "./layouts/backdrop";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/procedures";
+@import "./layouts/search";
+@import "./layouts/beauty-zone";
+@import "./layouts/why-us";

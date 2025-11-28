@@ -1,70 +1,70 @@
 .procedures {
   display: flex;
   justify-content: center;
-}
-.main-procedures {
-  color: var(--color-dark);
-  font-family: "Play";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-}
+  &__main {
+    color: var(--color-dark);
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+  }
 
-.titel-procedures {
-  margin-bottom: 48px;
-}
+  &__titel {
+    margin-bottom: 48px;
+  }
 
-.list-conteiner-procederes {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-}
-/* Контейнер для розміщення фото */
-.conteiter-procedures-img {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
+  &__list-conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  /* Контейнер для розміщення фото */
+  &__conteiter-img {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 
-/* Опис Наші Процедури з фото */
-.procedures-info {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(
-    180.05deg,
-    rgba(1, 28, 68, 0) 48.53%,
-    rgba(1, 28, 68, 0.725825) 84.61%,
-    #011c44 101.39%
-  );
-  border-radius: 120px 4px;
-  height: 456px;
-  width: 344px;
-  transition: transform 0.2s;
-}
+  /* Опис Наші Процедури з фото */
+  &__info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    );
+    border-radius: 120px 4px;
+    height: 456px;
+    width: 344px;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
 
-.procedures-info:hover {
-  transform: scale(1.05);
-}
-/* IMG PROCEDURES */
-.img-procedures1 {
-  border-radius: 120px 4px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+  /* IMG PROCEDURES */
+  &__img-1 {
+    border-radius: 120px 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
-.main-h3-procedures {
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-  flex-wrap: wrap;
-  align-items: center;
-  color: var(--color-light);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
+  &__main-h3 {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--color-light);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+  }
 }

@@ -1,41 +1,23 @@
-.header-conteiner {
+.header {
   display: flex;
   align-items: center;
   gap: 40px;
-}
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
 
-.heder-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
+  &__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
 
-.conteiner-menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
-
-/* Меню hedear Навігація по сайту */
-.menu-header {
-  color: var(--color-dark);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.menu-header:hover {
-  color: var(--color-black);
-  font-style: normal;
-  font-size: 18px;
-}
-
-/* HEADER соціальна сеть */
-.conteiner-contact {
-  display: flex;
-  gap: 32px;
+  &__contact {
+    display: flex;
+    gap: 32px;
+  }
 }
