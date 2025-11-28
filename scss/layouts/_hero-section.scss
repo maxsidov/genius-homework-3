@@ -1,0 +1,42 @@
+.hero-section {
+  padding: 123px 0;
+  padding-left: 106px;
+  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.hero-conteiner {
+  padding-left: 106px;
+}
+
+/* Парграф  Косметологічна клініка*/
+.main-paragraf-title {
+  color: var(--color-dark);
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* Beauty Zone  Назва сайту*/
+.main-Hero-title {
+  color: var(--color-black);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  width: 529px;
+  margin-bottom: 40px;
+}
+
+/* Опис для button */
+.main-paragraf-button {
+  color: #4a4a4a;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}

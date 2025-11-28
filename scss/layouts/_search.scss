@@ -1,0 +1,124 @@
+.contact-section {
+  padding-bottom: 94px;
+
+  /* === Заголовок блоку === */
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .titel-search {
+    margin-bottom: 48px;
+  }
+
+  .main-search {
+    color: var(--color-dark);
+    font-family: "Play";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center; /* Щоб 100% був по центру */
+  }
+
+  /* === Основний блок (карта + форма) === */
+  .main-record {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .container-maps {
+      flex-shrink: 0;
+      border-radius: 32px;
+      overflow: hidden;
+    }
+  }
+
+  /* === Блок форми === */
+  .record {
+    background-image: url(../images/background-singl-up.png);
+    background-color: var(--color-dark);
+    background-size: cover;
+    background-position: center;
+    border-radius: 32px;
+    width: 100%;
+    max-width: 423px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  /* Контейнер всередині форми */
+  .conteiner-record {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* === Заголовок форми === */
+  .h3-Sign-up {
+    color: var(--color-light);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    .accent {
+      color: #4d9fff;
+    }
+  }
+
+  /* === ФОРМА === */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Поля вводу */
+  .contact-field input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #345995;
+    border-radius: 32px;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: var(--color-light);
+    outline: none;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    &:focus {
+      border-color: #4d9fff;
+    }
+  }
+
+  /* Текст з політикою */
+  .contact-policy {
+    color: #747272;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 8px;
+    max-width: 240px;
+
+    a {
+      color: #4d9fff;
+      text-decoration: underline;
+    }
+  }
+
+  /* === АДАПТИВ === */
+  @media (max-width: 768px) {
+    .record {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.footer {
+  padding: 56px 0;
+  position: relative;
+  background-image: url(../images/background-footer.png);
+  background-color: var(--color-dark);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::after {
+  position: absolute;
+  width: 278px;
+  height: 152px;
+  background-size: 100%;
+  bottom: 0;
+  right: 0;
+  background-image: url("../images/PhotoRoom.png");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+/* футер контейнер розміщення в ряд */
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.logo-footer {
+  flex-grow: 1;
+}
+
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.address-container {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.address-confidentiality {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 24px;
+}
+
+.info-address {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.main-container {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+/* footer menu */
+.main-footer-menu {
+  color: var(--color-light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.address-icon {
+  fill: var(--color-light);
+}
+
+/* Політика конфіденційності*/
+.main-confidentiality {
+  color: var(--color-light);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*  */
+.main-2022 {
+  color: #747272;
+  font-style: normal;
+  font-weight: 400;
+} /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+.Why-us {
+  display: flex;
+  justify-content: center;
+}
+
+.titel-Why-us {
+  margin-bottom: 48px;
+  max-width: 432px;
+  text-align: center;
+}
+.main-h2-Why-us {
+  color: var(--color-dark);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+// перевірити 
+.container-Why-us-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.container-Why-us-description {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
+
+.container-Why-us1 {
+  padding: 24px;
+  border: 1px solid var(--color-dark); /* удалити*/
+  border-radius: 16px;
+  width: 100%;
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-why-us {
+  display: block;
+  margin: 0 auto;
+  fill: var(--color-black);
+}
+
+

@@ -1,0 +1,35 @@
+/* Кнопка для прогортування */
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-dark);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+.carousel-conteiner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-black);
+}
+
+.carousel-arrow {
+  fill: var(--color-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-light);
+}

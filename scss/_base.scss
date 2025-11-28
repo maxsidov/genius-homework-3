@@ -31,3 +31,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/*  HEader */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 32px 0;
+
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.accent {
+  color: var(--color-black);
+}
