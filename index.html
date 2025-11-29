@@ -435,51 +435,60 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">✖</button>
+        <div class="modal-main">
+          <h2 class="h2-modal">Замовити дзвінок</h2>
+          <div class="modal-sing-up">
+            <p class="p-modal">
+              Запишіться <span class="accent">безкоштовно</span> <br />
+              та отримайте подарунок
+            </p>
 
-        <h2 class="h2-modal">Замовити дзвінок</h2>
-        <p class="p-modal">Запишіться безкоштовно та отримайте подарунок</p>
+            <form class="modal-form" autocomplete="off">
+              <label class="modal-field">
+                <input
+                  class="record"
+                  type="text"
+                  name="username"
+                  placeholder="Ваше імʼя та прізвище"
+                  required
+                  pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+\s+[A-Za-zА-Яа-яІіЇїЄєҐґ]+$"
+                  title="Введіть імʼя та прізвище через пробіл"
+                />
+              </label>
 
-        <form class="modal-form" autocomplete="off">
-          <label class="modal-field">
-            <input
-              type="text"
-              name="username"
-              placeholder="Ваше імʼя та прізвище"
-              required
-              pattern="^[A-Za-zА-Яа-яІіЇїЄєҐґ]+\s+[A-Za-zА-Яа-яІіЇїЄєҐґ]+$"
-              title="Введіть імʼя та прізвище через пробіл"
-            />
-          </label>
+              <label class="modal-field">
+                <input
+                  class="record"
+                  type="tel"
+                  name="phone"
+                  placeholder="Ваш номер телефону"
+                  required
+                  pattern="^\+380\d{9}$"
+                  title="Формат: +380XXXXXXXXX"
+                />
+              </label>
 
-          <label class="modal-field">
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Ваш номер телефону"
-              required
-              pattern="^\+380\d{9}$"
-              title="Формат: +380XXXXXXXXX"
-            />
-          </label>
+              <label class="modal-field">
+                <input
+                  class="record"
+                  type="email"
+                  name="email"
+                  placeholder="Ваша електронна пошта"
+                  required
+                  title="Введіть коректний email"
+                />
+              </label>
 
-          <label class="modal-field">
-            <input
-              type="email"
-              name="email"
-              placeholder="Ваша електронна пошта"
-              required
-              title="Введіть коректний email"
-            />
-          </label>
-
-          <button type="submit" class="modal-submit">
-            Записатись безкоштовно
-          </button>
-          <p class="modal-policy">
-            Натискаючи на кнопку ви погоджуєтесь з
-            <a href="#">політикою конфіденційності</a>
-          </p>
-        </form>
+              <button type="submit" class="modal-submit">
+                Записатись безкоштовно
+              </button>
+              <p class="modal-policy">
+                Натискаючи на кнопку ви погоджуєтесь з
+                <a href="#">політикою конфіденційності</a>
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 

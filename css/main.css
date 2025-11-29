@@ -238,6 +238,15 @@ header {
   transition: opacity 250ms ease, visibility 250ms ease;
 }
 
+.modal-main {
+  width: 435px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центр по горизонталі */
+  text-align: center;
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -247,31 +256,51 @@ header {
 /* Модалка */
 .modal {
   position: relative;
-  width: 100%;
-  max-width: 681px;
-  height: 100%;
-  max-height: 723px;
-  padding: 42px 144px;
+  width: 90%;
+  max-width: 723px;
+  max-height: 90vh;
+  padding: 40px 40px;
   background-image: url("../images/background-  singl-up.png");
   background-color: var(--color-dark);
   background-size: cover;
   background-position: center;
   border-radius: 32px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* З'явиться скрол якщо екран маленький */
+  overflow-x: hidden;
 }
 
 /* Заголовки */
 .h2-modal {
   color: #ffffff;
-  font-size: 36px;
+  font-family: "Play, sans-serif";
+  font-style: normal;
   font-weight: 700;
-  margin-bottom: 16px;
+  font-size: 64px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 32px;
+  width: 435px;
+}
+
+.modal-sing-up {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .p-modal {
   color: #ffffff;
   opacity: 0.9;
   margin-bottom: 30px;
+  font-family: "Roboto, sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 /* Кнопка Х (закрити) */
@@ -288,21 +317,31 @@ header {
 
 /* Форма */
 .modal-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .modal-field input {
-  width: 100%;
   background: transparent;
-  border: 1px solid #345995;
+  border: 2px solid #747272;
   border-radius: 32px;
   padding: 14px 20px;
   font-size: 16px;
   color: #ffffff;
   outline: none;
   transition: border-color 0.2s;
+}
+
+.record {
+  width: 310px;
+  font-family: "Roboto, sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .modal-field input::-moz-placeholder {
@@ -339,6 +378,7 @@ header {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .modal-policy a {
@@ -702,7 +742,6 @@ header {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.6;
-  font-family: "Roboto";
 }
 .beauty-zone__img {
   position: relative;
