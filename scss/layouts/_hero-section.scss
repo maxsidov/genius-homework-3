@@ -1,7 +1,7 @@
 .hero-section {
   padding: 123px 0;
   padding-left: 106px;
-  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
+  background-image: url(../images/procedures-on-a-woman.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -17,13 +17,15 @@
   /* Beauty Zone  Назва сайту*/
   &__hero {
     color: var(--color-black);
-    font-family: "Play, sans-seri";
+    font-family: "Play", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 140px;
     line-height: 0.8;
     width: 529px;
     margin-bottom: 40px;
+
+    
   }
 
   /* Опис для button */

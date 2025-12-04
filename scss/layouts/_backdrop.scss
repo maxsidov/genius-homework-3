@@ -34,7 +34,7 @@
   max-width: 723px;
   max-height: 90vh;
   padding: 40px 40px;
-  background-image: url("../images/background-  singl-up.png");
+  background-image: url("../images/background-wave.png");
   background-color: var(--color-dark);
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@
 /* Заголовки */
 .h2-modal {
   color: #ffffff;
-  font-family: "Play, sans-serif";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -126,7 +126,7 @@
 
 /* Кнопка */
 .modal-submit {
-  padding: 14px 30px;
+  padding: 16px 32px;
   border-radius: 32px;
   border: none;
   background: #3b7bff;

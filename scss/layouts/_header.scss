@@ -10,14 +10,31 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
 
   &__contact {
-    display: flex;
-    gap: 32px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+  &__buttom-menu {
+    background: none;
+    border: none;
+    fill: #ffffff;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

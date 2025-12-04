@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Roboto, sans-serif";
+  font-family: "Roboto", sans-serif;
   color: var(--color-dark);
   font-weight: 400;
   font-size: 18px;
@@ -260,7 +260,7 @@ header {
   max-width: 723px;
   max-height: 90vh;
   padding: 40px 40px;
-  background-image: url("../images/background-  singl-up.png");
+  background-image: url("../images/background-wave.png");
   background-color: var(--color-dark);
   background-size: cover;
   background-position: center;
@@ -274,7 +274,7 @@ header {
 /* Заголовки */
 .h2-modal {
   color: #ffffff;
-  font-family: "Play, sans-serif";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -358,7 +358,7 @@ header {
 
 /* Кнопка */
 .modal-submit {
-  padding: 14px 30px;
+  padding: 16px 32px;
   border-radius: 32px;
   border: none;
   background: #3b7bff;
@@ -499,20 +499,40 @@ header {
   gap: 40px;
 }
 .header__menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
 .header__contact {
-  display: flex;
-  gap: 32px;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__contact {
+    display: flex;
+    gap: 32px;
+  }
+}
+.header__buttom-menu {
+  background: none;
+  border: none;
+  fill: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .header__buttom-menu {
+    display: none;
+  }
 }
 
 .hero-section {
   padding: 123px 0;
   padding-left: 106px;
-  background-image: url(../images/Doctor-performs\ procedures-on-a-woman.jpg);
+  background-image: url(../images/procedures-on-a-woman.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -528,7 +548,7 @@ header {
 }
 .hero-section__hero {
   color: var(--color-black);
-  font-family: "Play, sans-seri";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 140px;
@@ -554,7 +574,7 @@ header {
 }
 .procedures__main {
   color: var(--color-dark);
-  font-family: "Play, sans-seri";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -620,7 +640,7 @@ header {
 }
 .search__find-us .main-search {
   color: var(--color-dark);
-  font-family: "Play, sans-seri";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -638,7 +658,7 @@ header {
   overflow: hidden;
 }
 .search__record {
-  background-image: url(../images/background-singl-up.png);
+  background-image: url(../images/background-wave.png);
   background-color: var(--color-dark);
   background-size: cover;
   background-position: center;
@@ -728,7 +748,7 @@ header {
 }
 .beauty-zone__main-h2 {
   color: var(--color-dark);
-  font-family: "Play, sans-seri";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -798,12 +818,12 @@ header {
 }
 .Why-us__titel {
   margin-bottom: 48px;
-  max-width: 432px;
+  max-width: 442px;
   text-align: center;
 }
 .Why-us__main-h2 {
   color: var(--color-dark);
-  font-family: "Play, sans-seri";
+  font-family: "Play", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
