@@ -1,5 +1,6 @@
 .Stas-animation {
   animation: spinScale 3s ease-in-out 1;
+  animation-iteration-count: infinite;
 }
 
 @keyframes spinScale {

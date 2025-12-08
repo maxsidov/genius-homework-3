@@ -4,7 +4,7 @@
 
   &__button {
     color: var(--color-light);
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -14,8 +14,6 @@
     border-radius: 32px;
     width: 219px;
     height: 53px;
-    left: 20px;
-    top: 20px;
     transition: color 0.2s;
     &:hover {
       color: var(--color-black);

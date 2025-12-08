@@ -35,6 +35,12 @@
     line-height: 1.6;
   }
 
+  &__p-span {
+    font-family: "Play", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+  }
+
   &__img {
     position: relative;
     display: flex;
@@ -85,6 +91,5 @@
     right: -26px;
     top: 32px;
     position: absolute;
-    transform: rotate(0.5t);
   }
 }
